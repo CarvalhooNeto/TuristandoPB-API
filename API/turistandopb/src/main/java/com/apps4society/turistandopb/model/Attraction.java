@@ -44,7 +44,7 @@ public class Attraction {
     private String type;
 
     @Column(nullable = false)
-    private String maisInformacoes;
+    private String moreInfo;
 
     @Column(nullable = false)
     private String category;

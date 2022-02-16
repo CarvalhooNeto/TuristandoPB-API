@@ -31,11 +31,14 @@ public class TuristandopbApplication {
 			c.setImagemURL("imagemURL");
 			c.setLatitude("latitude");
 			c.setLongitude("longitude");
-			c.setMaisInformacoes("maisInformacoes");
+			c.setMoreInfo("maisInformacoes");
 			c.setType("type");
 			c.setCategory("category");
 
+			attractiveRepository.findByName("nome");
+
 			attractiveRepository.save(c);
+
 		};
 	}
 

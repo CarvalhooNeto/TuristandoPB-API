@@ -23,4 +23,30 @@ public class AttractionController {
     public @ResponseBody List<Attraction> list() {
         return AttractionRepository.findAll();
     }
+
+    @GetMapping(value = "/api/attractions/type")
+    public @ResponseBody List<Attraction> listByType(String type) {
+        return AttractionRepository.findByType(type);
+    }
+
+    @GetMapping(value = "/api/attractions/name")
+    public @ResponseBody List<Attraction> listByName(String name) {
+        return AttractionRepository.findByName(name);
+    }
+    
+    @GetMapping(value = "/api/attractions/description")
+    public @ResponseBody List<Attraction> listByDescription(String description) {
+        return AttractionRepository.findByDescription(description);
+    }
+
+    @GetMapping(value = "/api/attractions/city")
+    public @ResponseBody List<Attraction> listByCity(String city) {
+        return AttractionRepository.findByCity(city);
+    }
+
+    @GetMapping(value = "/api/attractions/state")
+    public @ResponseBody List<Attraction> listByState(String state) {
+        return AttractionRepository.findBystate(state);
+    }
+
 }
