@@ -35,7 +35,7 @@ public class TuristandopbApplication {
 			c.setType("type");
 			c.setCategory("category");
 
-			attractiveRepository.findByName("nome");
+	
 
 			attractiveRepository.save(c);
 
