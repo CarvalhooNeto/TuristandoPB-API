@@ -17,29 +17,6 @@ public class TuristandopbApplication {
 		SpringApplication.run(TuristandopbApplication.class, args);
 	}
 
-	@Bean
-	CommandLineRunner initDatabase(AttractionRepository attractiveRepository) {
-		return args -> {
-			attractiveRepository.deleteAll();
 
-			Attraction c = new Attraction();
-			c.setName("nome");
-			c.setCity("cidade");
-			c.setDescription("descricao");
-			c.setState("PB");
-			c.setTime("18:00");
-			c.setImagemURL("imagemURL");
-			c.setLatitude("latitude");
-			c.setLongitude("longitude");
-			c.setMoreInfo("maisInformacoes");
-			c.setType("type");
-			c.setCategory("category");
-
-	
-
-			attractiveRepository.save(c);
-
-		};
-	}
 
 }
